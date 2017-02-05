@@ -1,0 +1,82 @@
+
+/*
+ * https://github.com/leinedam
+ * http://sangoidesign.com/
+ * made by Madeleine Sangoi
+ * Under MIT License
+ */
+
+		#calc-container{
+			position: absolute;
+			width: 370px;
+			height: 350px;
+			border: 2px solid gray;
+			border-radius: 10px;
+			margin-top: 7%;
+			padding: 12px 8px 12px 8px;
+			box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+			color: gray;
+		    top: 0px;
+		    z-index: 2;
+		   
+		    left:45%;
+
+		}
+
+		.inner{
+			margin-left: auto;
+			margin-right: auto;
+			width: 300px;
+			display: block;
+		}
+
+		input[type=button]{
+			background-color: lightGray;
+			font-size: 18px;
+			width: 70px;
+			height: 50px;
+			font-weight: 900;
+			margin: 0px;
+			border-radius: 4px;
+			padding: 10px 5px 15px 5px;
+		}
+		input[type=text]{
+			position: relative;
+			display: block;
+			width: 100%;
+			margin: 5px auto;
+		    font-size: 23px;
+		    color: gray;
+		    margin-bottom: 10px;
+		}
+		input[class=c]{
+			background-color: #993333;
+			color: white;
+
+		}
+		input[class=operator]{
+			background-color:  #b3ccff;
+		}
+		input[class=iqual]{
+			background-color: #993333;
+			color: white;
+
+		}
+
+		input[class=zero]{
+			width: 145px;
+
+		}
+		input[class=operatorplus]{
+			width: 145px;
+			background-color:  #b3ccff;
+
+		}
+		input[class=c]{
+			width: 145px;
+
+		}
+		@media only screen and (max-width : 760px) {
+			#calc-container{
+				left: 50%
+		}

@@ -1,0 +1,41 @@
+/*
+ * https://github.com/leinedam
+ * http://sangoidesign.com/
+ * made by Madeleine Sangoi
+ * Under MIT License
+ */
+.container-quote{
+	font-family: sans-serif;
+	text-align: center;
+	background-color: lightgray;
+	margin-top: 6%;
+	background-color: rgba(25, 25, 77, 0.5);
+	color: white;
+	max-width: 55%;
+	padding: 20px;
+	border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+#quote{
+	line-height: 37px;
+	font-size: 25px;
+	font-stretch: 38px;
+}
+#author{
+	line-height: 26px;
+	font-size: 15px;
+	font-stretch: 28px;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+    @media only screen and (max-width : 760px) {
+
+    	.container-quote{
+
+			max-width: 90%;
+		}
+}

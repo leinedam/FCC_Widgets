@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head class="headerComponents">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A serie of HTML5 and Jquery widgets">
+    <meta name="author" content="Madeleine Sangoi">
+
+	<title>Calculator</title>	
+	<!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/startmin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Calculator component CSS -->
+	<link href="../css/components/calculator.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="wrapper" >
+
+    <!-- Page Content -->
+    <div id="page-wrapper" >
+        <div class="container-fluid" >
+
+
+            <!-- ... Your content goes here ... -->
+
+				<div id="calc-container">
+						<div class="inner">
+							<form name="calculator">
+								<input type="text" name="answer">
+
+								<input type="button" value="7" onclick="calculator.answer.value += '7'">
+								<input type="button" value="8" onclick="calculator.answer.value += '8'">
+								<input type="button" value="9" onclick="calculator.answer.value += '9'">
+								<input type="button" value="/" class="operator" onclick="calculator.answer.value += '/'"><br>
+
+								<input type="button" value=" 4 " name="4" onclick="calculator.answer.value += '4'">
+								<input type="button" value=" 5 " name="5" onclick="calculator.answer.value += '5'">
+								<input type="button" value=" 6 " name="6" onclick="calculator.answer.value += '6'">
+								<input type="button" value=" x " class="operator" onclick="calculator.answer.value += '*'"><br>
+								
+								<input type="button" value=" 1 " onclick="calculator.answer.value += '1'">
+								<input type="button" value=" 2 " onclick="calculator.answer.value += '2'">
+								<input type="button" value=" 3 " onclick="calculator.answer.value += '3'">
+								<input type="button" value=" - " class="operator" onclick="calculator.answer.value += '-'">
+								<br>
+
+
+								<input type="button" value="0" class="zero"  onclick="calculator.answer.value += '0'">
+								<input type="button" value=" + " class="operatorplus" onclick="calculator.answer.value += '+'">
+								<br>
+								
+								<input type="button" value=" ce " class="c" onclick="calculator.answer.value = ''">
+								<input type="button" value=" . " name="." onclick="calculator.answer.value += '.'">
+								
+								<input type="button" value=" = " class="iqual" onclick="calculator.answer.value = eval(calculator.answer.value)">
+								
+							</form>
+						</div>
+					</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../js/metisMenu.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="../js/startmin.js"></script>
+<!-- Custom Theme  -->
+<script src="../js/dinamic.js"></script>
+
+</body>
+</html>
